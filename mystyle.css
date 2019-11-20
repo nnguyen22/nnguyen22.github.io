@@ -110,7 +110,7 @@ p {
   margin-right: auto;
 }
 
-.parallax {
+/* .parallax {
   /* The image used */
   background-image: url('img_parallax.jpg');
 
@@ -122,4 +122,4 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
