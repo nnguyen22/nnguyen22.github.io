@@ -1,8 +1,10 @@
 
 body {
-  background-color: white;
+  background-color: #170a49;
   font-family: Arial;
 }
+
+/* header area */
 .name {
   /* color: #6b16cc; */
   text-align: left;
@@ -15,21 +17,33 @@ body {
   /* background-color: white; */
 }
 #first{
-  color: #dd88f9;
+  color: #c3a7e4;
   padding-right: 0.5%;
 }
 #last{
-  color:#37bbf8;
+  color:#c3a7e4;
+}
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+/* icons */
+.flex-icons{
+  display:flex;
+}
+.icon{
+  padding: 15px;
 }
 
+/* webpage */
 h2 {
   color: white;
   text-align: center;
-
 }
 
 p {
-
   font-size: 20px;
 }
 
@@ -40,7 +54,6 @@ p {
   font-family: Arial;
   /* width: 100%; */
 }
-
 /* Links inside the navbar */
 .navbar a {
   float: left;
@@ -50,13 +63,11 @@ p {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 /* The dropdown container */
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
@@ -68,12 +79,10 @@ p {
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
-
-/* Add a red background color to navbar links on hover */
+/* Add a blue background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #37bbf8;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -83,7 +92,6 @@ p {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
@@ -93,33 +101,47 @@ p {
   display: block;
   text-align: left;
 }
-
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* .parallax {
-  /* The image used */
-  background-image: url('img_parallax.jpg');
-
-  /* Full height */
-  height: 100%; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+/* button */
+#whitespace{
+  width: 30%;
+}
+.button-div{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+}
+.button {
+  background-color: #170a49; 
+  border: 2px solid #1b82be;
+  color: #1b82be;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin:0;
+  /* opacity: 0.7; */
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #1b82be;
+  border: 2px solid #1b82be;
+  color: #170a49; 
+  /* opacity: 1; */
+}
