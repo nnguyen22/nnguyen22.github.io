@@ -8,9 +8,6 @@ body {
 .name {
   /* color: #6b16cc; */
   text-align: left;
-  /* background: -webkit-linear-gradient(-90deg, rgba(55,187,248,1) 0%, rgba(221,136,249,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   font-family: Optima;
   font-weight: bold;
   display:flex;
