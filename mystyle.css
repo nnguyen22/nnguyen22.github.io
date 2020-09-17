@@ -157,11 +157,11 @@ p,h3 {
 }
 
 #left-pic{
-  transition-duration: 1.5s;
+  transition-duration: 1.0s;
 }
 #left-pic:hover{
     position:relative;
-    transform: scale(1.5);
+    transform: scale(1.25);
     margin-left: 100px;
     /* transform: translateX(50px) */
 }
@@ -174,11 +174,11 @@ p,h3 {
 }
   
 #right-pic{
-  transition-duration: 1.5s;
+  transition-duration: 1.0s;
 }
 #right-pic:hover{
   position:relative;
-  transform: scale(1.5);
+  transform: scale(1.25);
   margin-right: 100px;
   /* transform: translateX(-50px) */
 }
