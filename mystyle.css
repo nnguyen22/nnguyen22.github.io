@@ -4,6 +4,15 @@ body {
   font-family: Arial;
 }
 
+#vertName {
+  flex-direction: column;
+  align-content: center;
+  margin-top: auto;
+}
+.letters {
+  height: 8vh;
+}
+
 /* header area */
 .name {
   /* color: #6b16cc; */
@@ -26,14 +35,18 @@ body {
   display: flex;
   width: 100%;
   flex-wrap: nowrap;
-  align-items: baseline;
+  /* align-items: baseline; */
+  justify-content: space-between;
 }
 /* icons */
 .flex-icons{
   display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .icon{
   padding: 15px;
+
 }
 
 /* webpage */
@@ -116,6 +129,12 @@ p,h3 {
   margin-right: auto;
 }
 
+.centerV{
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 /* about me */
 .outline {
   display: flex;
@@ -128,7 +147,7 @@ p,h3 {
   margin: auto;
   padding-bottom: 5px;
   align-items: baseline;
-  max-height: 75px;
+  min-height: 75px;
   overflow: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */

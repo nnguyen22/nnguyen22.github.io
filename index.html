@@ -2,69 +2,99 @@
 <html>
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <title>Nina Nguyen</title>
   <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body overflow-y: auto;>
+<body>
+
+<!-- <body overflow-y: auto;> -->
   <div class="flex-container">
-    <div class="name">
-      <h1 id="first">NINA</h1>
-      <a href="index.html" style="text-decoration: none;"><h1 id="last">NGUYEN</h1></a>
+    <div id="vertName" style="margin-top: 3vh; margin-bottom: 3vh;">
+      <div></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
+      <div><img class="letters" src="I.png" alt="i"></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
+      <div><img class="letters" src="A.png" alt="A"></div>
+      <div><img class="letters" src="Space.png" alt="N"></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
+      <div><img class="letters" src="G.png" alt="G"></div>
+      <div><img class="letters" src="U.png" alt="U"></div>
+      <div><img class="letters" src="Y.png" alt="Y"></div>
+      <div><a href="#"><img  class="letters" id="menu" src="E.png" onclick="changeButton()" alt="E"></a></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
     </div>
+    <div class="centerV" style="padding: 10px 0px 10px 0px;">
+      <div class="outline">
+        <div  id="about-me">
+          <div>
+        </div>
+        <div style="padding: 0px 15px 0px 15px;">
+          <div style="display:flex; flex-direction: row; flex-wrap: nowrap;">
+            <div>
+          <div><img src="N.png" style="width: 100px"></div>
+          <div><p> Name: Nina Nguyen</p></div>
+          <div><p> Level: 23</p></div>
+        </div>
+      </div>
+          <p>Lorem ipsum dolor sit amet, in vitae dictas pro, an tantas inimicus corrumpit quo, cum veritus efficiantur an. Persius habemus ne sea, percipit omittantur no usu. Nec utinam salutandi ex. 
+            Ex qui dolor similique, vim et cetero alterum. At nec eros justo consulatu.</p>
+            
+        </div>
+        </div>
+
+    </div> 
+      </div>
+    
     <div class="flex-icons">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       <a href="#" class="icon"><img src="Email.png" alt="Email" style="width:32px;height:32px;"></a>
       <a href="#" class="icon"><img src="Phone.png" alt="Phone" style="width:32px;height:32px;"></a>
-      <a href="#" class="icon"><img src="GitHub.png" alt="GitHub" style="width:32px;height:32px;"></a>
+      <a href="Portfolios.html" class="icon"><img src="GitHub.png" alt="GitHub" style="width:32px;height:32px;"></a>
       <a href="resume.html" class="icon"><img src="Resume.png" alt="Resume" style="width:32px;height:32px;"></a>
     </div>
-  </div>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <div class="dropdown">
-      <button class="dropbtn">Projects
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="portfolioCS.html">General</a>
-        <a href="portfolioDesign.html">UX/UI Specific</a>
-      </div>
-    </div>
-      <a href="#contact">Contact</a>
-  </div>
-  <div style="padding: 10px 0px 10px 0px;">
-  <div class="outline">
-  <div  id="about-me">
-    <div>
-  </div>
-  <div style="padding: 0px 15px 0px 15px;">
-    <p>Lorem ipsum dolor sit amet, in vitae dictas pro, an tantas inimicus corrumpit quo, cum veritus efficiantur an. Persius habemus ne sea, percipit omittantur no usu. Nec utinam salutandi ex. Ex qui dolor similique, vim et cetero alterum. At nec eros justo consulatu.</p>
-  </div>
-  </div>
-</div>
-</div>
-  
-
-
-  <!-- images in the middle -->
-  <!-- <div style="height:50%;"> -->
-<div class="graphics">
-  <a href="portfolioDesign.html" id="left-pic"><img src="FillPict1.png" alt="Portfolio 1" style="width:140px;height:280px;"></a>
-  <a href="portfolioCS.html" id="right-pic"><img src="RightPict1.png" alt="Portfolio 1" style="width:280px;height:280px;"></a>
-</div>
-<!-- </div> -->
-  <!-- buttons -->
-  <div class="button-div">
-    <div>
-    <button class="button">Portfolio 1</button>
-  </div>
-  <div id="whitespace"></div>
-  <div>
-    <button class="button">Portfolio 2</button>
-  </div>
   </div>
 
 </body>
 
 </html>
+
+<script>
+    function changeButton() {
+        var image = document.getElementById('menu');
+        if (image.src.match("E.png")) {
+            image.src = "X.png";
+        }
+        else {
+            image.src = "E.png";
+        }
+    }
+
+    $('.img-container').on('click',function() {
+   $(this).toggleClass('active'); 
+});
+</script>

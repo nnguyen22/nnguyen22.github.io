@@ -2,51 +2,123 @@
 <html>
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <title>Design Porfolios</title>
   <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
+
   <div class="flex-container">
-    <div class="name">
-      <h1 id="first">NINA</h1>
-      <a href="index.html" style="text-decoration: none;"><h1 id="last">NGUYEN</h1></a>
+    <div id="vertName">
+      <div></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
+      <div><img class="letters" src="I.png" alt="i"></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
+      <div><img class="letters" src="A.png" alt="A"></div>
+      <div><img class="letters" src="Space.png" alt="N"></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
+      <div><img class="letters" src="G.png" alt="G"></div>
+      <div><img class="letters" src="U.png" alt="U"></div>
+      <div><img class="letters" src="Y.png" alt="Y"></div>
+      <div><a href="#"><img  class="letters" id="menu" src="E.png" onclick="changeButton()" alt="E"></a></div>
+      <div><img class="letters" src="N.png" alt="N"></div>
     </div>
-    <div class="flex-icons">
-      <a href="#" class="icon"><img src="Email.png" alt="Email" style="width:32px;height:32px;"></a>
-      <a href="#" class="icon"><img src="Phone.png" alt="Phone" style="width:32px;height:32px;"></a>
-      <a href="#" class="icon"><img src="GitHub.png" alt="GitHub" style="width:32px;height:32px;"></a>
-      <a href="#" class="icon"><img src="Resume.png" alt="Resume" style="width:32px;height:32px;"></a>
-    </div>
-  </div>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="resume.html">Resume</a>
-    <div class="dropdown">
-      <button class="dropbtn">Projects
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="portfolioCS.html">General</a>
-        <a href="portfolioDesign.html">UX/UI Specific</a>
+  
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h2>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          <div id="spike">
+            <div id="spikevid" align="center">
+              <video width="500" controls>
+                <source src="Spike.mp4" type=video/mp4> </video>
+                </div>
+                  <div id="spikedes" align="center">
+                    <h3>Spike Exercise</h3>
+                    <p>
+                      Given a short amount of time of 2 days, students were expected to create a <br />
+                      "UW Rate 'Em" on any media with given specifications.I created this with <br />
+                      CSS and HTML without knowing the languages at all.
+                    </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <a href="#contact">Contact</a>
-  </div>
-  <div id="spike">
-    <div id="spikevid" align="center">
-      <video width="500" controls>
-        <source src="Spike.mp4" type=video/mp4> </video>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Collapsible Group Item #2
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
         </div>
-          <div id="spikedes" align="center">
-            <h3>Spike Exercise</h3>
-            <p>
-              Given a short amount of time of 2 days, students were expected to create a <br />
-              "UW Rate 'Em" on any media with given specifications.I created this with <br />
-              CSS and HTML without knowing the languages at all.
-            </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Collapsible Group Item #3
+          </button>
+        </h2>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
     </div>
   </div>
+  <div class="flex-icons">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  <a href="#" class="icon"><img src="Email.png" alt="Email" style="width:32px;height:32px;"></a>
+  <a href="#" class="icon"><img src="Phone.png" alt="Phone" style="width:32px;height:32px;"></a>
+  <a href="Portfolios.html" class="icon"><img src="GitHub.png" alt="GitHub" style="width:32px;height:32px;"></a>
+  <a href="resume.html" class="icon"><img src="Resume.png" alt="Resume" style="width:32px;height:32px;"></a>
+</div>
+</div>
+
 </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
